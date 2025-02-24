@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inconsolata", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style:normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 5px gray;
+    z-index: 999;
+}
+
+.nav .logo {
+    margin-left: 35px;
+}
+
+.nav .nav-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+    margin: 0 20px 0 40px;
+
+}
+
+.nav .search {
+    width: 560px;
+    display: flex;
+    margin: 0 0 9px 0;
+    /* border: 1px solid black; */
+    height: 40px;
+    align-items: center;
+    background-color: #efeeeeca;
+    padding: 15px 0;
+    padding-left: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+
+}
+
+.nav .search a svg {
+    width: 20px;
+    padding: 5px;
+    opacity:0.25;
+    transition: opacity 0.3s ease;
+}
+.nav .search a svg:active {
+    opacity: 0.75;
+}
+
+.nav .search a:focus {
+    outline: none;
+}
+
+
+.nav .search input {
+    border: none;
+    margin-left: 5px;
+    height: 36px;
+    background-color: transparent;
+    padding: 0 0 0 5px;
+    border-color: rgb(242, 241, 241);
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    
+}
+
+.nav .search input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.nav .search:focus-within {
+    background-color: transparent;
+    border: 1px solid black;
+    border-color: rgba(0, 0, 0, 0.395);
+}
+
+
+.nav .pro-wish-bag ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+
+}
+
+.men-list {
+    position: relative;
+
+}
+
+.men-display {
+    /* display: none; */
+    /* z-index: -1; */
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Positions it below the parent */
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.men-list:hover .men-display {
+    /* display: block;
+    cursor: pointer; */
+    display: flex;
+}
+
+.men-list a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    height: 60px;
+    width: 100%;
+
+
+}
+
+.men-list a:hover {
+    /* border-bottom: 2px solid black;     */
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* .men-display:hover{
+    display: flex;
+} */
+
+.men {
+    /* display: none; */
+    display: flex;
+    top: 80px;
+    left: 150px;
+    width: 750px;
+    position: fixed;
+    /* padding-top: 50px; */
+    padding-bottom: 10px;
+    /* margin-top: 55px; */
+    background-color: #efeeeeca;
+    gap: 15px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    /* z-index: -1; */
+}
+
+
+.men ul {
+    list-style: none;
+}
+
+
+/* .pro-wish-bag ul{
+    display: flex;
+    
+} */
+
+.pro-wish-bag a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.lis {
+    /* height: 60px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile a svg{
+    opacity: 0.45;
+}
+.profile a svg:hover{
+    opacity: 1;
+}
+
+.profile-content {
+    position: absolute;
+    top: 80px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    right: 90px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #2999818d;
+    color: #ffffff;
+
+}
+
+.profile a:hover {
+    /* border-bottom: 1px solid black; */
+    color: rgb(5, 131, 241);
+}
+
+.profile a {
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 55px;
+    transition: 0.3s ease;
+    /* background-color: red; */
+
+}
+
+.profile:hover .profile-content {
+    display: block;
+
+}
+
+.profile-content ul {
+    color: #fff;
+    /* margin-top: 10px; */
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:flex-start; */
+    align-items: flex-start;
+}
+
+.profile-content .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Grand Global Brands */
+
+.slider-container {
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    /*Adjust width as needed */
+    overflow: hidden;
+    /* border: 2px 0 solid #ddd; */
+    border-radius: 10px;
+}
+
+.boy-img-first {
+    /* margin-right: 1px; */
+}
+
+
+
+.photo-section {
+    margin: auto;
+    display: flex;
+    width: 200%;
+    /* Twice the width to accommodate both sections */
+    transition: transform 0.6s ease-in-out;
+    /* Smooth sliding effect */
+}
+
+.photo-section img {
+    width: 251px;
+    height: 326px;
+}
+
+
+.boy-img {
+    width: 50%;
+    /* overflow: hidden; */
+    /* Each section takes 50% */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+.photo-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* gap: 2px; */
+
+}
+
+/* input[type="radio"] {
+    display: none; Hide radio buttons
+} */
+
+#first:checked~.photo-section #first,
+.photo-section #first {
+    display: flex;
+}
+
+/* Show second section when second radio is checked */
+#second:checked~.photo-section #first {
+    display: none;
+}
+
+#second:checked~.photo-section #second {
+    display: flex;
+}
+
+/* Shop by category */
+
+
+
+
+
+.container {
+    margin: 2px;
+    padding: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: fit-content;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.cards {
+    width: 470px;
+    height: 520px;
+    background-color: #e3fef8;
+    box-sizing: border-box;
+    transition: box-shadow 0.8s ease;
+}
+
+.cards:hover{
+    box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.cards img {
+    width: 470px;
+    height: 70%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+.card-content {
+    text-align: center;
+    height: 30%;
+    font-size: 13px;
+ } 
+
+ .cards p,a{
+    font-size: 14px;
+    text-decoration: none;
+ }
+
+ .cards a{ 
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: px;
+    padding: 10px;
+    color: #299981;
+ }
+
+
+/* footer */
+
+.footer-container {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: #ffffff;
+    color: #000000;
+    text-align: left;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #299981;
+}
+
+.footer-section form input {
+    padding: 8px;
+    width: 70%;
+}
+
+.footer-section form button {
+    padding: 8px;
+    background: #ff9900;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #6df6cd;
+}
